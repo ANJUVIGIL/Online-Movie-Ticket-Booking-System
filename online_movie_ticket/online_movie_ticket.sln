@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "online_movie_ticket", "online_movie_ticket\online_movie_ticket.csproj", "{8114F7C2-3EE1-47B1-887D-07F7151DB6DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{5B6DAF7E-1C57-4EAE-967A-21354272E859}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{6E3C58EE-76AE-4A49-8915-C8A5C42F16F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8114F7C2-3EE1-47B1-887D-07F7151DB6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8114F7C2-3EE1-47B1-887D-07F7151DB6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8114F7C2-3EE1-47B1-887D-07F7151DB6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8114F7C2-3EE1-47B1-887D-07F7151DB6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6DAF7E-1C57-4EAE-967A-21354272E859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6DAF7E-1C57-4EAE-967A-21354272E859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6DAF7E-1C57-4EAE-967A-21354272E859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6DAF7E-1C57-4EAE-967A-21354272E859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3C58EE-76AE-4A49-8915-C8A5C42F16F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3C58EE-76AE-4A49-8915-C8A5C42F16F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3C58EE-76AE-4A49-8915-C8A5C42F16F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3C58EE-76AE-4A49-8915-C8A5C42F16F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

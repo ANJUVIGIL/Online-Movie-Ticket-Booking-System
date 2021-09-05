@@ -1,0 +1,4 @@
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\DAL\bin\DAL.dll
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\DAL\bin\DAL.pdb
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\DAL\obj\Debug\DAL.dll
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\DAL\obj\Debug\DAL.pdb

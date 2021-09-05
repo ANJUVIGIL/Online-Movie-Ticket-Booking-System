@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8114F7C2-3EE1-47B1-887D-07F7151DB6DA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>online_movie_ticket</RootNamespace>
+    <AssemblyName>online_movie_ticket</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin2\adminprofile.aspx" />
+    <Content Include="admin2\amin2assets\css\bootstrap.min.css" />
+    <Content Include="admin2\amin2assets\css\clndr.css" />
+    <Content Include="admin2\amin2assets\css\custom.css" />
+    <Content Include="admin2\amin2assets\css\font-awesome.css" />
+    <Content Include="admin2\amin2assets\css\jqvmap.css" />
+    <Content Include="admin2\amin2assets\css\lines.css" />
+    <Content Include="admin2\amin2assets\css\style.css" />
+    <Content Include="admin2\amin2assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="admin2\amin2assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="admin2\amin2assets\images\1.png" />
+    <Content Include="admin2\amin2assets\images\2.png" />
+    <Content Include="admin2\amin2assets\images\3.png" />
+    <Content Include="admin2\amin2assets\images\4.png" />
+    <Content Include="admin2\amin2assets\images\5.png" />
+    <Content Include="admin2\amin2assets\images\arrow-left.png" />
+    <Content Include="admin2\amin2assets\images\arrow-right.png" />
+    <Content Include="admin2\amin2assets\images\bg.jpg" />
+    <Content Include="admin2\amin2assets\images\cloud.png" />
+    <Content Include="admin2\amin2assets\images\logo.png" />
+    <Content Include="admin2\amin2assets\images\pic1.png" />
+    <Content Include="admin2\amin2assets\images\pic2.png" />
+    <Content Include="admin2\amin2assets\images\pic3.jpg" />
+    <Content Include="admin2\amin2assets\images\pic4.jpg" />
+    <Content Include="admin2\amin2assets\js\bootstrap.min.js" />
+    <Content Include="admin2\amin2assets\js\Chart.js" />
+    <Content Include="admin2\amin2assets\js\clndr.js" />
+    <Content Include="admin2\amin2assets\js\custom.js" />
+    <Content Include="admin2\amin2assets\js\d3.v3.js" />
+    <Content Include="admin2\amin2assets\js\jquery.min.js" />
+    <Content Include="admin2\amin2assets\js\jquery.vmap.js" />
+    <Content Include="admin2\amin2assets\js\jquery.vmap.sampledata.js" />
+    <Content Include="admin2\amin2assets\js\jquery.vmap.world.js" />
+    <Content Include="admin2\amin2assets\js\metisMenu.min.js" />
+    <Content Include="admin2\amin2assets\js\moment-2.2.1.js" />
+    <Content Include="admin2\amin2assets\js\rickshaw.js" />
+    <Content Include="admin2\amin2assets\js\site.js" />
+    <Content Include="admin2\amin2assets\js\underscore-min.js" />
+    <Content Include="admin2\collections.aspx" />
+    <Content Include="admin2\home.aspx" />
+    <Content Include="admin2\mainindex.aspx" />
+    <Content Include="admin2\mainmaster.Master" />
+    <Content Include="admin2\msgview.aspx" />
+    <Content Include="admin2\viewbooking.aspx" />
+    <Content Include="admin\movie.aspx" />
+    <Content Include="img\ad img\11720867-accept-icon.jpg" />
+    <Content Include="img\ad img\download.png" />
+    <Content Include="logout.aspx" />
+    <Content Include="public\about.aspx" />
+    <Content Include="public\booking.aspx" />
+    <Content Include="public\contact.aspx" />
+    <Content Include="public\contacts.aspx" />
+    <Content Include="public\home.aspx" />
+    <Content Include="public\login.aspx" />
+    <Content Include="public\publicassets\csshm\style-starter.css" />
+    <Content Include="public\publicassets\csslogin\._style.css" />
+    <Content Include="public\publicassets\csslogin\bootstrap.min.css" />
+    <Content Include="public\publicassets\csslogin\bootstrap\mixins\_border-radius.css" />
+    <Content Include="public\publicassets\csslogin\bootstrap\mixins\_reset-text.css" />
+    <Content Include="public\publicassets\csslogin\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="public\publicassets\csslogin\bootstrap\mixins\_text-hide.css" />
+    <Content Include="public\publicassets\csslogin\bootstrap\mixins\_visibility.css" />
+    <Content Include="public\publicassets\csslogin\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="public\publicassets\csslogin\bootstrap\_media.css" />
+    <Content Include="public\publicassets\csslogin\style.css" />
+    <Content Include="public\publicassets\cssm\font-awesome.css" />
+    <Content Include="public\publicassets\cssm\style.css" />
+    <Content Include="public\publicassets\css\flexslider.css" />
+    <Content Include="public\publicassets\css\lightbox.css" />
+    <Content Include="public\publicassets\css\style.css" />
+    <Content Include="public\publicassets\css\tsc_tabs.css" />
+    <Content Include="public\publicassets\fontshm\fontawesome-webfont.svg" />
+    <Content Include="public\publicassets\imageshm\1.jpg" />
+    <Content Include="public\publicassets\imageshm\2.jpg" />
+    <Content Include="public\publicassets\imageshm\3.jpg" />
+    <Content Include="public\publicassets\imageshm\4.jpg" />
+    <Content Include="public\publicassets\imageshm\5.jpg" />
+    <Content Include="public\publicassets\imageshm\a1.jpg" />
+    <Content Include="public\publicassets\imageshm\a2.jpg" />
+    <Content Include="public\publicassets\imageshm\a3.jpg" />
+    <Content Include="public\publicassets\imageshm\a4.jpg" />
+    <Content Include="public\publicassets\imageshm\a5.jpg" />
+    <Content Include="public\publicassets\imageshm\banner1.jpg" />
+    <Content Include="public\publicassets\imageshm\banner2.jpg" />
+    <Content Include="public\publicassets\imageshm\banner3.jpg" />
+    <Content Include="public\publicassets\imageshm\banner4.jpg" />
+    <Content Include="public\publicassets\imageshm\c1.jpg" />
+    <Content Include="public\publicassets\imageshm\c2.jpg" />
+    <Content Include="public\publicassets\imageshm\c3.jpg" />
+    <Content Include="public\publicassets\imageshm\m1.jpg" />
+    <Content Include="public\publicassets\imageshm\m10.jpg" />
+    <Content Include="public\publicassets\imageshm\m11.jpg" />
+    <Content Include="public\publicassets\imageshm\m12.jpg" />
+    <Content Include="public\publicassets\imageshm\m2.jpg" />
+    <Content Include="public\publicassets\imageshm\m3.jpg" />
+    <Content Include="public\publicassets\imageshm\m4.jpg" />
+    <Content Include="public\publicassets\imageshm\m5.jpg" />
+    <Content Include="public\publicassets\imageshm\m6.jpg" />
+    <Content Include="public\publicassets\imageshm\m7.jpg" />
+    <Content Include="public\publicassets\imageshm\m8.jpg" />
+    <Content Include="public\publicassets\imageshm\m9.jpg" />
+    <Content Include="public\publicassets\imageshm\mid1.jpg" />
+    <Content Include="public\publicassets\imageshm\mid2.jpg" />
+    <Content Include="public\publicassets\imageshm\mid3.jpg" />
+    <Content Include="public\publicassets\imageshm\n1.jpg" />
+    <Content Include="public\publicassets\imageshm\n2.jpg" />
+    <Content Include="public\publicassets\imageshm\n3.jpg" />
+    <Content Include="public\publicassets\imageshm\n4.jpg" />
+    <Content Include="public\publicassets\imageshm\n5.jpg" />
+    <Content Include="public\publicassets\imageshm\n6.jpg" />
+    <Content Include="public\publicassets\imageshm\team1.jpg" />
+    <Content Include="public\publicassets\imageshm\team2.jpg" />
+    <Content Include="public\publicassets\imageshm\team3.jpg" />
+    <Content Include="public\publicassets\imageshm\team4.jpg" />
+    <Content Include="public\publicassets\imageshm\team5.jpg" />
+    <Content Include="public\publicassets\imageshm\team6.jpg" />
+    <Content Include="public\publicassets\imageslogin\bg.jpg" />
+    <Content Include="public\publicassets\imagesm\banner.jpg" />
+    <Content Include="public\publicassets\imagesm\bannerm.jpg" />
+    <Content Include="public\publicassets\images\banner-no.png" />
+    <Content Include="public\publicassets\images\banner.jpg" />
+    <Content Include="public\publicassets\images\banner1.jpg" />
+    <Content Include="public\publicassets\images\banner2.jpg" />
+    <Content Include="public\publicassets\images\banner3.jpg" />
+    <Content Include="public\publicassets\images\but.png" />
+    <Content Include="public\publicassets\images\close.png" />
+    <Content Include="public\publicassets\images\dribble.png" />
+    <Content Include="public\publicassets\images\f-icon.png" />
+    <Content Include="public\publicassets\images\fb.png" />
+    <Content Include="public\publicassets\images\hd-bg.png" />
+    <Content Include="public\publicassets\images\icon.png" />
+    <Content Include="public\publicassets\images\large-button-overlay.png" />
+    <Content Include="public\publicassets\images\line.gif" />
+    <Content Include="public\publicassets\images\loading.gif" />
+    <Content Include="public\publicassets\images\logo.png" />
+    <Content Include="public\publicassets\images\p-but.png" />
+    <Content Include="public\publicassets\images\pic.jpg" />
+    <Content Include="public\publicassets\images\pic1.jpg" />
+    <Content Include="public\publicassets\images\pic10.jpg" />
+    <Content Include="public\publicassets\images\pic11.jpg" />
+    <Content Include="public\publicassets\images\pic12.jpg" />
+    <Content Include="public\publicassets\images\pic13.jpg" />
+    <Content Include="public\publicassets\images\pic14.jpg" />
+    <Content Include="public\publicassets\images\pic15.jpg" />
+    <Content Include="public\publicassets\images\pic16.jpg" />
+    <Content Include="public\publicassets\images\pic17.jpg" />
+    <Content Include="public\publicassets\images\pic18.jpg" />
+    <Content Include="public\publicassets\images\pic19.jpg" />
+    <Content Include="public\publicassets\images\pic2.jpg" />
+    <Content Include="public\publicassets\images\pic20.jpg" />
+    <Content Include="public\publicassets\images\pic21.jpg" />
+    <Content Include="public\publicassets\images\pic22.jpg" />
+    <Content Include="public\publicassets\images\pic23.jpg" />
+    <Content Include="public\publicassets\images\pic24.jpg" />
+    <Content Include="public\publicassets\images\pic25.jpg" />
+    <Content Include="public\publicassets\images\pic3.jpg" />
+    <Content Include="public\publicassets\images\pic4.jpg" />
+    <Content Include="public\publicassets\images\pic5.jpg" />
+    <Content Include="public\publicassets\images\pic6.jpg" />
+    <Content Include="public\publicassets\images\pic7.jpg" />
+    <Content Include="public\publicassets\images\pic8.jpg" />
+    <Content Include="public\publicassets\images\pic9.jpg" />
+    <Content Include="public\publicassets\images\pinterest.png" />
+    <Content Include="public\publicassets\images\s-icon.png" />
+    <Content Include="public\publicassets\images\tw.png" />
+    <Content Include="public\publicassets\jshm\all.js" />
+    <Content Include="public\publicassets\jshm\app.js" />
+    <Content Include="public\publicassets\jshm\bootstrap.min.js" />
+    <Content Include="public\publicassets\jshm\easyResponsiveTabs.js" />
+    <Content Include="public\publicassets\jshm\jquery-1.9.1.min.js" />
+    <Content Include="public\publicassets\jshm\jquery-3.3.1.min.js" />
+    <Content Include="public\publicassets\jshm\jquery.countup.js" />
+    <Content Include="public\publicassets\jshm\jquery.magnific-popup.min.js" />
+    <Content Include="public\publicassets\jshm\jquery.waypoints.min.js" />
+    <Content Include="public\publicassets\jshm\main.js" />
+    <Content Include="public\publicassets\jshm\owl.carousel.js" />
+    <Content Include="public\publicassets\jshm\popper.min.js" />
+    <Content Include="public\publicassets\jshm\theme-change.js" />
+    <Content Include="public\publicassets\jslogin\bootstrap.min.js" />
+    <Content Include="public\publicassets\jslogin\jquery.min.js" />
+    <Content Include="public\publicassets\jslogin\main.js" />
+    <Content Include="public\publicassets\jslogin\popper.js" />
+    <Content Include="public\publicassets\jsm\jquery-2.2.3.min.js" />
+    <Content Include="public\publicassets\js\example.js" />
+    <Content Include="public\publicassets\js\jquery.color-RGBa-patch.js" />
+    <Content Include="public\publicassets\js\jquery.flexslider.js" />
+    <Content Include="public\publicassets\js\jquery.min.js" />
+    <Content Include="public\publicassets\js\lightbox.js" />
+    <Content Include="public\publicassets\js\modernizr.js" />
+    <Content Include="public\publicassets\login2css\style.css" />
+    <Content Include="public\publicassets\login2images\bg.jpg" />
+    <Content Include="public\publicassets\login2images\lo-bg.png" />
+    <Content Include="public\publicassets\logincss\logincss.css" />
+    <Content Include="public\seatbooking.aspx" />
+    <Content Include="public\signin.aspx" />
+    <Content Include="public\title.aspx" />
+    <Content Include="user\editprofile.aspx" />
+    <Content Include="user\movies.aspx" />
+    <Content Include="user\thanks.aspx" />
+    <Content Include="user\userassets\csslogin\._style.css" />
+    <Content Include="user\userassets\csslogin\bootstrap.min.css" />
+    <Content Include="user\userassets\csslogin\bootstrap\mixins\_border-radius.css" />
+    <Content Include="user\userassets\csslogin\bootstrap\mixins\_reset-text.css" />
+    <Content Include="user\userassets\csslogin\bootstrap\mixins\_screen-reader.css" />
+    <Content Include="user\userassets\csslogin\bootstrap\mixins\_text-hide.css" />
+    <Content Include="user\userassets\csslogin\bootstrap\mixins\_visibility.css" />
+    <Content Include="user\userassets\csslogin\bootstrap\utilities\_stretched-link.css" />
+    <Content Include="user\userassets\csslogin\bootstrap\_media.css" />
+    <Content Include="user\userassets\csslogin\style.css" />
+    <Content Include="user\userassets\cssm\font-awesome.css" />
+    <Content Include="user\userassets\cssm\style.css" />
+    <Content Include="user\userassets\css\flexslider.css" />
+    <Content Include="user\userassets\css\lightbox.css" />
+    <Content Include="user\userassets\css\style.css" />
+    <Content Include="user\userassets\css\tsc_tabs.css" />
+    <Content Include="user\userassets\imageslogin\bg.jpg" />
+    <Content Include="user\userassets\imagesm\bannerm.jpg" />
+    <Content Include="user\userassets\images\banner-no.png" />
+    <Content Include="user\userassets\images\banner.jpg" />
+    <Content Include="user\userassets\images\banner1.jpg" />
+    <Content Include="user\userassets\images\banner2.jpg" />
+    <Content Include="user\userassets\images\banner3.jpg" />
+    <Content Include="user\userassets\images\but.png" />
+    <Content Include="user\userassets\images\close.png" />
+    <Content Include="user\userassets\images\dribble.png" />
+    <Content Include="user\userassets\images\f-icon.png" />
+    <Content Include="user\userassets\images\fb.png" />
+    <Content Include="user\userassets\images\hd-bg.png" />
+    <Content Include="user\userassets\images\icon.png" />
+    <Content Include="user\userassets\images\large-button-overlay.png" />
+    <Content Include="user\userassets\images\line.gif" />
+    <Content Include="user\userassets\images\loading.gif" />
+    <Content Include="user\userassets\images\logo.png" />
+    <Content Include="user\userassets\images\p-but.png" />
+    <Content Include="user\userassets\images\pic.jpg" />
+    <Content Include="user\userassets\images\pic1.jpg" />
+    <Content Include="user\userassets\images\pic10.jpg" />
+    <Content Include="user\userassets\images\pic11.jpg" />
+    <Content Include="user\userassets\images\pic12.jpg" />
+    <Content Include="user\userassets\images\pic13.jpg" />
+    <Content Include="user\userassets\images\pic14.jpg" />
+    <Content Include="user\userassets\images\pic15.jpg" />
+    <Content Include="user\userassets\images\pic16.jpg" />
+    <Content Include="user\userassets\images\pic17.jpg" />
+    <Content Include="user\userassets\images\pic18.jpg" />
+    <Content Include="user\userassets\images\pic19.jpg" />
+    <Content Include="user\userassets\images\pic2.jpg" />
+    <Content Include="user\userassets\images\pic20.jpg" />
+    <Content Include="user\userassets\images\pic21.jpg" />
+    <Content Include="user\userassets\images\pic22.jpg" />
+    <Content Include="user\userassets\images\pic23.jpg" />
+    <Content Include="user\userassets\images\pic24.jpg" />
+    <Content Include="user\userassets\images\pic25.jpg" />
+    <Content Include="user\userassets\images\pic3.jpg" />
+    <Content Include="user\userassets\images\pic4.jpg" />
+    <Content Include="user\userassets\images\pic5.jpg" />
+    <Content Include="user\userassets\images\pic6.jpg" />
+    <Content Include="user\userassets\images\pic7.jpg" />
+    <Content Include="user\userassets\images\pic8.jpg" />
+    <Content Include="user\userassets\images\pic9.jpg" />
+    <Content Include="user\userassets\images\pinterest.png" />
+    <Content Include="user\userassets\images\s-icon.png" />
+    <Content Include="user\userassets\images\tw.png" />
+    <Content Include="user\userassets\jslogin\bootstrap.min.js" />
+    <Content Include="user\userassets\jslogin\jquery.min.js" />
+    <Content Include="user\userassets\jslogin\main.js" />
+    <Content Include="user\userassets\jslogin\popper.js" />
+    <Content Include="user\userassets\jsm\jquery-2.2.3.min.js" />
+    <Content Include="user\userassets\js\example.js" />
+    <Content Include="user\userassets\js\jquery.color-RGBa-patch.js" />
+    <Content Include="user\userassets\js\jquery.flexslider.js" />
+    <Content Include="user\userassets\js\jquery.min.js" />
+    <Content Include="user\userassets\js\lightbox.js" />
+    <Content Include="user\userassets\js\modernizr.js" />
+    <Content Include="user\userassets\login2css\style.css" />
+    <Content Include="user\userassets\login2images\bg.jpg" />
+    <Content Include="user\userassets\login2images\lo-bg.png" />
+    <Content Include="user\userassets\logincss\logincss.css" />
+    <Content Include="user\userbooking.aspx" />
+    <Content Include="user\userhome.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin2\adminprofile.aspx.cs">
+      <DependentUpon>adminprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin2\adminprofile.aspx.designer.cs">
+      <DependentUpon>adminprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin2\collections.aspx.cs">
+      <DependentUpon>collections.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin2\collections.aspx.designer.cs">
+      <DependentUpon>collections.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin2\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin2\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin2\mainindex.aspx.cs">
+      <DependentUpon>mainindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin2\mainindex.aspx.designer.cs">
+      <DependentUpon>mainindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin2\mainmaster.Master.cs">
+      <DependentUpon>mainmaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin2\mainmaster.Master.designer.cs">
+      <DependentUpon>mainmaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin2\msgview.aspx.cs">
+      <DependentUpon>msgview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin2\msgview.aspx.designer.cs">
+      <DependentUpon>msgview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin2\viewbooking.aspx.cs">
+      <DependentUpon>viewbooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin2\viewbooking.aspx.designer.cs">
+      <DependentUpon>viewbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\movie.aspx.cs">
+      <DependentUpon>movie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\movie.aspx.designer.cs">
+      <DependentUpon>movie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="public\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="public\booking.aspx.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\booking.aspx.designer.cs">
+      <DependentUpon>booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="public\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="public\contacts.aspx.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\contacts.aspx.designer.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="public\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="public\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="public\seatbooking.aspx.cs">
+      <DependentUpon>seatbooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\seatbooking.aspx.designer.cs">
+      <DependentUpon>seatbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="public\signin.aspx.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\signin.aspx.designer.cs">
+      <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="public\title.aspx.cs">
+      <DependentUpon>title.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\title.aspx.designer.cs">
+      <DependentUpon>title.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="public\visitormaster.Master.cs">
+      <DependentUpon>visitormaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="public\visitormaster.Master.designer.cs">
+      <DependentUpon>visitormaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="user\editprofile.aspx.cs">
+      <DependentUpon>editprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\editprofile.aspx.designer.cs">
+      <DependentUpon>editprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\movies.aspx.cs">
+      <DependentUpon>movies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\movies.aspx.designer.cs">
+      <DependentUpon>movies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\thanks.aspx.cs">
+      <DependentUpon>thanks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\thanks.aspx.designer.cs">
+      <DependentUpon>thanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\userbooking.aspx.cs">
+      <DependentUpon>userbooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\userbooking.aspx.designer.cs">
+      <DependentUpon>userbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\userhome.aspx.cs">
+      <DependentUpon>userhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\userhome.aspx.designer.cs">
+      <DependentUpon>userhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\usermaster.Master.cs">
+      <DependentUpon>usermaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\usermaster.Master.designer.cs">
+      <DependentUpon>usermaster.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="public\publicassets\fonts\Amble-Light-webfont.ttf" />
+    <Content Include="public\visitormaster.Master" />
+    <Content Include="public\publicassets\fontsm\fontawesome-webfont.eot" />
+    <Content Include="public\publicassets\fontsm\fontawesome-webfont.ttf" />
+    <Content Include="public\publicassets\fontsm\fontawesome-webfont.woff" />
+    <Content Include="public\publicassets\fontsm\fontawesome-webfont.woff2" />
+    <Content Include="public\publicassets\fontsm\FontAwesome.otf" />
+    <Content Include="public\publicassets\csslogin\.DS_Store" />
+    <Content Include="public\publicassets\csslogin\bootstrap\.DS_Store" />
+    <Content Include="public\publicassets\csslogin\bootstrap\mixins\.DS_Store" />
+    <Content Include="public\publicassets\imageslogin\.DS_Store" />
+    <Content Include="public\publicassets\jslogin\.DS_Store" />
+    <Content Include="user\usermaster.Master" />
+    <Content Include="user\userassets\csslogin\.DS_Store" />
+    <Content Include="user\userassets\csslogin\bootstrap\.DS_Store" />
+    <Content Include="user\userassets\csslogin\bootstrap\mixins\.DS_Store" />
+    <Content Include="user\userassets\fontslogin\.DS_Store" />
+    <Content Include="user\userassets\fontsm\fontawesome-webfont.eot" />
+    <Content Include="user\userassets\fontsm\fontawesome-webfont.ttf" />
+    <Content Include="user\userassets\fontsm\fontawesome-webfont.woff" />
+    <Content Include="user\userassets\fontsm\fontawesome-webfont.woff2" />
+    <Content Include="user\userassets\fontsm\FontAwesome.otf" />
+    <Content Include="user\userassets\fonts\Amble-Light-webfont.ttf" />
+    <Content Include="user\userassets\imageslogin\.DS_Store" />
+    <Content Include="user\userassets\jslogin\.DS_Store" />
+    <Content Include="user\userassets\scss\.DS_Store" />
+    <Content Include="user\userassets\scss\bootstrap\.DS_Store" />
+    <Content Include="user\userassets\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="user\userassets\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="user\userassets\scss\bootstrap\bootstrap.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="user\userassets\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="user\userassets\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="user\userassets\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_alert.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_badge.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_button-group.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_buttons.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_card.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_carousel.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_close.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_code.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_dropdown.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_forms.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_functions.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_grid.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_images.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_input-group.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_list-group.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_media.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_mixins.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_modal.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_nav.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_navbar.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_pagination.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_popover.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_print.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_progress.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_reboot.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_root.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_spinners.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_tables.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_toasts.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_tooltip.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_transitions.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_type.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_utilities.scss" />
+    <Content Include="user\userassets\scss\bootstrap\_variables.scss" />
+    <Content Include="user\userassets\scss\style.scss" />
+    <Content Include="admin2\amin2assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="admin2\amin2assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="admin2\amin2assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="admin2\amin2assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="admin2\amin2assets\fonts\FontAwesome.otf" />
+    <Content Include="admin2\amin2assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="admin2\amin2assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="admin2\amin2assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="admin2\amin2assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="public\publicassets\fontshm\fontawesome-webfont.eot" />
+    <Content Include="public\publicassets\fontshm\fontawesome-webfont.ttf" />
+    <Content Include="public\publicassets\fontshm\fontawesome-webfont.woff" />
+    <Content Include="public\publicassets\fontshm\fontawesome-webfont.woff2" />
+    <Content Include="public\publicassets\fontshm\FontAwesome.otf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{5b6daf7e-1c57-4eae-967a-21354272e859}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35795/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

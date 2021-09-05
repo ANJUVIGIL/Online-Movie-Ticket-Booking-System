@@ -1,0 +1,9 @@
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\online_movie_ticket\obj\Debug\online_movie_ticket.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\online_movie_ticket\bin\online_movie_ticket.dll
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\online_movie_ticket\bin\online_movie_ticket.pdb
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\online_movie_ticket\obj\Debug\online_movie_ticket.dll
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\online_movie_ticket\obj\Debug\online_movie_ticket.pdb
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\online_movie_ticket\bin\BLL.dll
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\online_movie_ticket\bin\DAL.dll
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\online_movie_ticket\bin\BLL.pdb
+C:\Users\DELL\Desktop\net me\project updated\online_movie_ticket\online_movie_ticket\bin\DAL.pdb

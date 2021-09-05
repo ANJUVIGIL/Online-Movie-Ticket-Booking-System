@@ -1,0 +1,379 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="usermaster.master.cs" Inherits="online_movie_ticket.user.usermaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+            <%--<link href="public/publicAssets/css/style.css" rel="stylesheet" type="text/css" media="all"/>--%>
+    <link href="userassets/css/style.css" rel="stylesheet" />
+<%--<link href="public/publicAssets/css/flexslider.css" rel="stylesheet" type="text/css" media="all"/>--%>
+    <link href="userassets/css/flexslider.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+     
+    <!-- DC Tabs CSS -->
+<link type="text/css" rel="stylesheet" href="http://www.dreamtemplate.com/dreamcodes/tabs/css/tsc_tabs.css" />
+ <!-- jQuery Library (skip this step if already called on page ) -->
+<script type="text/javascript" src="http://www.dreamtemplate.com/dreamcodes/jquery.min.js"></script> <!-- (do not call twice) -->
+ <!-- DC Tabs JS -->
+<!--<script type="text/javascript" src="http://www.dreamtemplate.com/dreamcodes/tabs/js/tsc_tabs.js"></script>-->
+<%--<link rel="stylesheet" href="css/tsc_tabs.css" type="text/css" media="all" />--%>
+    <link href="userassets/css/tsc_tabs.css" rel="stylesheet" />
+	
+	<%--<link rel="stylesheet" href="css/style.css">--%>
+    <%--<link href="public/publicassets/csslogin/style.css" rel="stylesheet" />--%>
+    <link href="userassets/csslogin/style.css" rel="stylesheet" />
+
+    <!-- //movie booking -->
+<link href='http://localhost:36539/fonts.googleapis.com/css?family=Kotta+One' rel='stylesheet' type='text/css'/>
+<link href='http://localhost:36539/fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'/>
+   <%-- <link href="publicAssets/cssm/style.css" rel="stylesheet" />--%>
+    <link href="userassets/cssm/style.css" rel="stylesheet" />
+  
+<%--    <script src="public/publicAssets/jsm/jquery-1.11.0.min.js"></script>--%>
+    <script src="userassets/jsm/jquery-2.2.3.min.js"></script>
+ 
+    <script src="public/publicAssets/jsm/jquery.seat-charts.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+
+         <div class="header">  
+	<div class="header-top">
+		<div class="wrap">
+			<div class="banner-no">
+		  		<%--<img src="public/publicAssets/images/banner-no.png" />--%>
+                <img src="userassets/images/banner-no.png" />
+		    </div>
+			  <div class="nav-wrap">
+					<ul class="group" id="example-one">
+			          <%-- <li class="current_page_item"><a href="home.aspx">Home</a></li>--%>
+                        <li class=""><a href="../public/home.aspx">Back to Home</a></li>
+                         <li class=""><a href="userhome.aspx">Profile</a></li>
+                        <li class=""><a href="editprofile.aspx">Edit Profile</a></li>
+			          <%-- <li><a href="public/about.aspx">About</a></li>--%>
+			  		   <li><a href="movies.aspx">Movies</a></li>
+                       <%-- <li><a href="login.aspx">Login</a></li>--%>
+                        <li><a href="../logout.aspx">Logout</a></li>
+			        </ul>
+			  </div>
+ 			<div class="clear"></div>
+   		</div>
+    </div>
+<div class="block">
+	<div class="wrap">
+		<div class="h-logo">
+			<%--<a href="index.aspx"><img src="public/publicAssets/images/logo.png" /></a>--%>
+            <h1>
+                <asp:Label ID="Label1" runat="server" Text="ADEL'S SHOW" Font-Names="Algerian" ForeColor="White"></asp:Label></h1>
+          <%--  <img src="userassets/images/logo.png" />--%>
+		</div>
+       <%-- <form action="#" id="reservation-form">
+		       <fieldset>
+		                <div class="field">
+			                 <label>Find a Movie:</label>
+			                  <select class="select2">
+			                    <option>Movie list</option>
+			                  </select>
+			            </div>
+		                <div class="field1">
+			                   <label>Search</label>
+			                  <select class="select1">
+			                    <option>Movies or Actors</option>
+			                  </select>
+		                </div>
+		       </fieldset>
+            </form>--%>
+            <div class="clear"></div>
+   </div>
+</div>
+<div class="banner">
+ <div class="wrap">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	<%--  <img src="public/publicAssets/images/banner1.jpg" />--%>
+                <img src="userassets/images/banner1.jpg" />
+  	    	</li>
+  	    	<li>
+  	    	<%--   <img src="public/publicAssets/images/banner.jpg" />--%>
+                  <img src="userassets/images/banner.jpg" />
+  	    	</li>
+  	    	<li>
+  	    	   <%--<img src="public/publicAssets/images/banner2.jpg" />--%>
+                  <img src="userassets/images/banner2.jpg" />
+  	    	</li>
+  	    	<li>
+  	    	   <%-- <img src="public/publicAssets/images/banner3.jpg" />--%>
+                  <img src="userassets/images/banner3.jpg" />
+  	    	</li>
+          </ul>
+        </div>
+      </section>
+   </div>
+</div>
+</div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="footer">
+	<div class="wrap">
+			<div class="footer-top">
+				<div class="col_1_of_4 span_1_of_4">
+					<div class="footer-nav">
+		                <ul>
+		                   <li><a href="#">Our Tips of gallery Template diam</a></li>
+		                    <li><a href="#">Our Tips of gallery Template diam</a></li>
+		                     <li><a href="#">Our Tips of gallery Template diam</a></li>
+		                       <li><a href="#">Our Tips of gallery Template diam</a></li>
+		                   </ul>
+		              </div>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<div class="textcontact">
+						<p>consectetuer adipiscing elit,<br/>
+						consectetuer<br/>
+						    Ph: 9946419283.<br/>
+						Email : <a href="mailto:example@mail.com">mail@example.com</a><br/>
+						</p>
+					</div>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<div class="call_info">
+						<p class="txt_3">Call us toll free:</p>
+						<p class="txt_4">9946419283</p>
+					</div>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<div class="social">
+						<a href="#"><img src="userassets/images/fb.png" /></a>
+                        
+						<a href="#"><img src="userassets/images/tw.png" /></a>
+						<a href="#"><img src="userassets/images/dribble.png" /></a>
+						<a href="#"><img src="userassets/images/pinterest.png" /></a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	 </div>
+    </div>
+    </form>
+
+<%--    <script src="public/publicAssets/js/modernizr.js"></script>--%>
+    <script src="userassets/js/modernizr.js"></script>
+
+   <%-- <script src="public/publicAssets/js/jquery.min.js"></script>--%>
+    <script src="userassets/js/jquery.min.js"></script>
+<%--<script src='js/jquery.color-RGBa-patch.js'></script>--%>
+   <%-- <script src="public/publicAssets/js/jquery.color-RGBa-patch.js"></script>--%>
+    <script src="userassets/js/jquery.color-RGBa-patch.js"></script>
+<%--<script src='js/example.js'></script>--%>
+<%--    <script src="public/publicAssets/js/example.js"></script>--%>
+    <script src="userassets/js/example.js"></script>
+<!-- jQuery -->
+<!-- FlexSlider -->
+ <%-- <script defer src="js/jquery.flexslider.js"></script>--%><script src="userassets/js/jquery.flexslider.js"></script>
+ <%--   <script src="public/publicAssets/js/jquery.flexslider.js"></script>--%>
+  <script type="text/javascript">
+      $(function () {
+          SyntaxHighlighter.all();
+      });
+      $(window).load(function () {
+          $('.flexslider').flexslider({
+              animation: "slide",
+              start: function (slider) {
+                  $('body').removeClass('loading');
+              }
+          });
+      });
+
+  </script>
+
+
+
+
+
+    
+
+
+
+
+
+    <script type="text/javascript">
+        var price = 10; //price
+        $(document).ready(function () {
+            var $cart = $('#selected-seats'), //Sitting Area
+            $counter = $('#counter'), //Votes
+            $total = $('#total'); //Total money
+
+            var sc = $('#seat-map').seatCharts({
+                map: [  //Seating chart
+                    'aaaaaaaaaa',
+                    'aaaaaaaaaa',
+                    '__________',
+                    'aaaaaaaa__',
+                    'aaaaaaaaaa',
+                    'aaaaaaaaaa',
+                    'aaaaaaaaaa',
+                    'aaaaaaaaaa',
+                    'aaaaaaaaaa',
+                    '__aaaaaa__'
+                ],
+                naming: {
+                    top: false,
+                    getLabel: function (character, row, column) {
+                        return column;
+                    }
+                },
+                legend: { //Definition legend
+                    node: $('#legend'),
+                    items: [
+                        ['a', 'available', 'Available'],
+                        ['a', 'unavailable', 'Sold'],
+                        ['a', 'selected', 'Selected']
+                    ]
+                },
+                click: function () { //Click event
+                    if (this.status() == 'available') { //optional seat
+                        $('<li>Row' + (this.settings.row + 1) + ' Seat' + this.settings.label + '</li>')
+                            .attr('id', 'cart-item-' + this.settings.id)
+                            .data('seatId', this.settings.id)
+                            .appendTo($cart);
+
+                        $counter.text(sc.find('selected').length + 1);
+                        $total.text(recalculateTotal(sc) + price);
+
+                        return 'selected';
+                    } else if (this.status() == 'selected') { //Checked
+                        //Update Number
+                        $counter.text(sc.find('selected').length - 1);
+                        //update totalnum
+                        $total.text(recalculateTotal(sc) - price);
+
+                        //Delete reservation
+                        $('#cart-item-' + this.settings.id).remove();
+                        //optional
+                        return 'available';
+                    } else if (this.status() == 'unavailable') { //sold
+                        return 'unavailable';
+                    } else {
+                        return this.style();
+                    }
+                }
+            });
+            //sold seat
+            sc.get(['1_2', '4_4', '4_5', '6_6', '6_7', '8_5', '8_6', '8_7', '8_8', '10_1', '10_2']).status('unavailable');
+
+        });
+        //sum total money
+        function recalculateTotal(sc) {
+            var total = 0;
+            sc.find('selected').each(function () {
+                total += price;
+            });
+
+            return total;
+        }
+			</script>
+
+    <script src="public/publicAssets/jsm/jquery.nicescroll.js"></script>
+    <script src="public/publicAssets/jsm/scripts.js"></script>
+
+
+
+
+
+
+   <%-- seat booking--%>
+     <!-- js -->
+    <%--<script src="js/jquery-2.2.3.min.js"></script>--%>
+        <script src="public/publicassets/jsm/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!-- script for seat selection -->
+    <script>
+        function onLoaderFunc() {
+            $(".seatStructure *").prop("disabled", true);
+            $(".displayerBoxes *").prop("disabled", true);
+        }
+
+        function takeData() {
+            if (($("#Username").val().length == 0) || ($("#Numseats").val().length == 0)) {
+                alert("Please Enter your Name and Number of Seats");
+            } else {
+                $(".inputForm *").prop("disabled", true);
+                $(".seatStructure *").prop("disabled", false);
+                document.getElementById("notification").innerHTML =
+                    "<b style='margin-bottom:0px;background:#ff9800;letter-spacing:1px;'>Please Select your Seats NOW!</b>";
+            }
+        }
+
+
+        function updateTextArea() {
+
+            if ($("input:checked").length == ($("#Numseats").val())) {
+                $(".seatStructure *").prop("disabled", true);
+
+                var allNameVals = [];
+                var allNumberVals = [];
+                var allSeatsVals = [];
+
+                //Storing in Array
+                allNameVals.push($("#Username").val());
+                allNumberVals.push($("#Numseats").val());
+                $('#seatsBlock :checked').each(function () {
+                    allSeatsVals.push($(this).val());
+                });
+
+                //Displaying 
+                $('#nameDisplay').val(allNameVals);
+                $('#NumberDisplay').val(allNumberVals);
+                $('#seatsDisplay').val(allSeatsVals);
+            } else {
+                alert("Please select " + ($("#Numseats").val()) + " seats")
+            }
+        }
+
+
+        function myFunction() {
+            alert($("input:checked").length);
+        }
+
+        /*
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        */
+
+
+        $(":checkbox").click(function () {
+            if ($("input:checked").length == ($("#Numseats").val())) {
+                $(":checkbox").prop('disabled', true);
+                $(':checked').prop('disabled', false);
+            } else {
+                $(":checkbox").prop('disabled', false);
+            }
+        });
+    </script>
+    <!-- //script for seat selection -->
+</body>
+</html>
